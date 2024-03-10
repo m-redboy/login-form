@@ -1,0 +1,119 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-inputs input {
+  width: 280px;
+  height: 15px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-buttons button {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.form-buttons button.google {
+  background-color: #ffffff;
+  border: 1px solid #333;
+  color: #333;
+}
+.form-buttons button.google:hover {
+  background-color: #0000000a;
+}
+
+.form-buttons button.facebook {
+  background-color: #ffffff;
+  border: 1px solid #333;
+  color: #333
+}
+
+.form-buttons button.facebook:hover {
+  background-color: #0000000a;
+}
+.form-buttons button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.submit {
+  background: linear-gradient(to right ,#6366f1 ,#3730a3 );
+}
+.submit:hover{
+  background: linear-gradient(to right  ,#3730a3,#6366f1 );
+}
+.form-image {
+  width: 220px;
+  height: 350px;
+  background-image: url('./img/20230821_100136.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 35px;
+}
+/* #4f46e5 */
+@media only screen and (max-width: 600px) {
+  .form-image{
+    width: 0px;
+  height: 0px;
+  }
+}
